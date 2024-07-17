@@ -45,6 +45,9 @@ ul{
 .nav-link:active{
     color:#404bbf ;
 }
+.nav-link:focus{
+    color: #404bbf;
+}
 .contakt-address{
     font-family: "Roboto", sans-serif ;
     font-weight: 400;
@@ -118,6 +121,7 @@ color: #2e2f42;
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-align: center;
+    text-transform: capitalize;
     color: #2e2f42;
 }
 .team-fon{
@@ -164,6 +168,7 @@ color: #2e2f42;
     background: #2e2f42;
 }
 .footer-logo{
+    font-family: "Raleway", sans-serif;
     color:#4d5ae5 ;
     font-weight: 700;
     font-size: 18px;
