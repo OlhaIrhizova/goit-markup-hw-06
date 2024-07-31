@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body{
     color:  #434455;
     font-family: "Roboto", sans-serif; 
@@ -13,6 +19,36 @@ a{
 }
 ul{
     list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+  
+}
+
+.img{
+    display: block;
+}
+
+.conteiner{
+    max-width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+   
+}
+.page-header{
+    
+    border-bottom: 1px solid #e7e9fc;
+}
+.header-conteiner{
+    display: flex;
+    align-items: center;
+}
+.nav{
+    display:flex;
+    align-items: center;
+  
 }
 
 
@@ -27,19 +63,36 @@ ul{
     color: #4d5ae5;
     
 }
+.header-logo {
+    padding: 24px 0;
+   margin-right: 76px;
+
+}
 .logo-accent{
     color:#2e2f42  ;
     
 }
+
+.menu{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
 .nav-link{
+    display: block;
+    padding: 24px 0;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2e2f42;
+   
 }
+
 .nav-link:hover{
+    
     color:#404BBF;
 }
 .nav-link:active{
@@ -48,17 +101,23 @@ ul{
 .nav-link:focus{
     color: #404bbf;
 }
-.contakt-address{
-    font-family: "Roboto", sans-serif ;
-    font-weight: 400;
-    font-size: 16px;
+.contacts{
     font-style: normal;
+    margin-left: auto;
+}
+
+.contakt-address{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.contakt-link{
+    display: block;
+    padding: 24px 0;
+    font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455;
-
-}
-.contakt-link{
     color: #434455;
 }
 .contakt-link:hover,
@@ -69,8 +128,19 @@ ul{
    background-color: #2e2f42;
 
 }
+.hero-section{
+    padding: 188px 0;
+}
 .hero-title{
-    font-weight: 700;
+   max-width: 496px;
+   margin: auto;
+   padding-bottom: 48px;
+}
+   
+   
+
+.hero-title{
+font-weight: 700;
 font-size: 56px;
 line-height: 1.07;
 letter-spacing: 0.02em;
@@ -78,6 +148,15 @@ text-align: center;
 color: #fff;
 text-transform: capitalize;
 }
+.button{
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    border-radius: 4px;
+    padding: 16px 32px;
+    margin: auto;
+}
+
 .button{
     font-weight: 500;
     letter-spacing: 0.04em;
@@ -95,6 +174,22 @@ text-transform: capitalize;
     color: #fff;
     background-color:#404bbf;
 }
+.advanteges-section{
+    padding: 120px 0;
+}
+.section-list{
+    display: flex;
+    gap: 24px;
+}
+.list{
+    width: calc((100% - 72px) / 4); 
+    
+}
+.advanteges-section-title{
+    margin-bottom: 8px; 
+}
+
+
 .advanteges-section-title{
    font-weight: 500;
    font-size: 20px;
@@ -109,12 +204,16 @@ color: #2e2f42;
     letter-spacing: 0.02em;
     color: #434455;
 }
-
+.our-team-section{
+    padding: 120px 0 ; 
+}
 
 .our-team-section{
     background: #f4f4fd
 }
-
+.team-title{
+    margin-bottom: 72px;
+}
 .team-title{
     font-weight: 700;
     font-size: 36px;
@@ -124,9 +223,23 @@ color: #2e2f42;
     text-transform: capitalize;
     color: #2e2f42;
 }
+.team-list{
+    display: flex;
+    gap: 24px;
+}
+
+
 .team-fon{
     background-color: #FFFFFF;
+    width: calc((100% - 72px) / 4); 
+    border-radius: 0px 0px 4px 4px; 
 }
+.team-list-title{
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+
 .team-list-title{
     font-weight: 500;
     font-size: 20px;
@@ -135,8 +248,23 @@ color: #2e2f42;
     color: #2e2f42;
 }
 .team-text{
+text-align: center;
+
+}
+.team-text{
     font-size: 16px;
     
+}
+.team{
+    padding: 32px 0 ;
+
+}
+.portfolio-section{
+    padding: 120px 0 120 0;
+}
+
+.portfolio-title{
+    margin-bottom: 72px;   
 }
 .portfolio-title{
   
@@ -147,6 +275,25 @@ color: #2e2f42;
    text-transform: capitalize;
    color: #2e2f42;
 }
+.portfolio-list{
+display: flex;
+flex-wrap:wrap ;
+column-gap: 24px;
+row-gap: 48px;
+
+}
+.portfolio{
+ width: calc((100% - 48px) / 3)  ; 
+}
+.portfolio-box{
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+}
+.portfolio-list-title{
+    margin-bottom: 8px;
+}
+
 .portfolio-list-title{
     font-weight: 500;
     font-size: 20px;
@@ -166,6 +313,7 @@ color: #2e2f42;
 
 .footer-section{
     background: #2e2f42;
+
 }
 .footer-logo{
     font-family: "Raleway", sans-serif;
@@ -177,9 +325,14 @@ color: #2e2f42;
     text-transform: uppercase;
 
 }
+.footer-logo{
+display: inline-block; 
+margin-bottom: 16px; 
+}
 .footer-logo-accent{
+
     color:#f4f4fd ;
- 
+    padding: 100px 0 ;
 
 }
 
@@ -188,4 +341,7 @@ color: #2e2f42;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
+}
+.footer-text{
+    max-width: 264px ;
 }
