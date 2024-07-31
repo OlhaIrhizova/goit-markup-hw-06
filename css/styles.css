@@ -27,11 +27,11 @@ h1,h2,h3,h4,h5,h6,p{
   
 }
 
-.img{
+img{
     display: block;
 }
 
-.conteiner{
+.container{
     max-width: 1158px;
     margin: 0 auto;
     padding: 0 15px;
@@ -41,7 +41,7 @@ h1,h2,h3,h4,h5,h6,p{
     
     border-bottom: 1px solid #e7e9fc;
 }
-.header-conteiner{
+.header-container{
     display: flex;
     align-items: center;
 }
@@ -92,7 +92,7 @@ h1,h2,h3,h4,h5,h6,p{
 }
 
 .nav-link:hover{
-    
+
     color:#404BBF;
 }
 .nav-link:active{
@@ -313,6 +313,7 @@ row-gap: 48px;
 
 .footer-section{
     background: #2e2f42;
+    padding: 100px 0 ;
 
 }
 .footer-logo{
@@ -332,8 +333,7 @@ margin-bottom: 16px;
 .footer-logo-accent{
 
     color:#f4f4fd ;
-    padding: 100px 0 ;
-
+   
 }
 
 .footer-text{
