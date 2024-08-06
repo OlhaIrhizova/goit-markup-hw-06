@@ -222,8 +222,10 @@ text-transform: capitalize;
 .advanteges-section{
     padding: 120px 0;
 }
-.advanteges-box
-{
+.advanteges-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 border: 1px solid #8e8f99;
 border-radius: 4px;
 width: 264px;
@@ -513,8 +515,8 @@ margin-bottom: 16px;
     fill:  #f4f4fd ;
 }
 .footer-social-links .link:hover,
-.footer-ocial-links .link:active,
-.footer-ocial-links .link:focus
+.footer-social-links .link:active,
+.footer-social-links .link:focus
 {
     background-color:#31D0AA;  
 }
