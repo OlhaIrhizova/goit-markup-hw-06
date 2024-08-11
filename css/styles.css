@@ -534,20 +534,21 @@ margin-bottom: 16px;
     padding-left: 80px;
     
 }
+.form-text{
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5; 
+    letter-spacing: 0.02em;
+    color: #ffffff; 
+}
 
 .form{
   display: flex; 
-  align-items: flex-end;
-  justify-content: center;
   gap: 24px;
 }
 .form-label{
-    font-family: inherit;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #fff;
+   
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -555,7 +556,7 @@ margin-bottom: 16px;
 }
 
 .form-input{
-font-family: inherit;
+
 font-weight: 400;
 font-size: 12px;
 line-height: 2;
@@ -592,6 +593,7 @@ cursor: pointer;
     background-color: #4d5ae5;
 }
 .modal-overlay{
+    position: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
