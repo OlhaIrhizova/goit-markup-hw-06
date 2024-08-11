@@ -434,9 +434,68 @@
        </li>
            </ul>
         </div>
-
-
-    </div>
+        <div class="footer-form">
+    <form class="form" name="issue_report_form" autofocus >  
+    <label class="form-label">
+        Subscribe
+        <input 
+         class="form-input"
+         type="email"
+         name="email"
+         placeholder="E-mail"
+         />
+</label>
+<button class="footer-button footer-btn" type="submit">
+    Subscribe
+    <svg class="footer-icon" width="24"  height="24">
+        <use href="./images/icons.svg#icon-icon-send"></use>
+    </svg>
+</button>
+</form>
+</div>
+</div>
     </footer>
+<div class="modal-overlay">
+<div class="modal">
+<form class="modal-form">
+    <p class="modal-form-text">Leave your contacts and we will call you back</p>
+    <label class="modal-form-label">
+        Name
+        <input class="modal-form-input" type="text" name="username"  />
+
+    </label>
+    <label class="modal-form-label">
+        Phone
+        <input class="modal-form-input" type="tel" name="contakt-tel"/>
+    </label>
+<label class="modal-form-label">
+    Email
+    <input class="modal-form-input" type="email" name="email" />
+</label>
+<label class="modal-form-label">
+    Comment
+    <textarea class="modal-form-textarea" name="comment" rows="5"
+    placeholder="Text input">
+</textarea>
+</label>
+<label class="modal-form-label">
+    <input class="checkbox-input" type="checkbox" name="privacy-policy"
+    value="I accept the terms and conditions of the Privacy Policy" checked/>
+    I accept the terms and conditions of the Privacy Policy
+</label>
+<button class="modal-button" type="submit">Send</button>
+
+</form>
+
+
+
+
+
+</div>
+</div>
+
+
+
+
 </body>
 </html>
