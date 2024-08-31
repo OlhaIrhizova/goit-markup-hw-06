@@ -1074,7 +1074,6 @@ button{
                         flex-direction: row;
                         flex-wrap: wrap; 
                         align-items: flex-start;
-                        padding-left: 108px;
                         gap: 72px 24px;
                     }  
                     .form{
@@ -1105,10 +1104,11 @@ button{
 
                 @media screen and (min-width:1158px ){
                     .footer-section{
-                        
+                        min-width: 1158px;
                         padding: 100px 0;
                        }
                     .footer-container{
+                        width: 1158px;
                         display: flex;
                         align-items: baseline;
                         gap: 0;
